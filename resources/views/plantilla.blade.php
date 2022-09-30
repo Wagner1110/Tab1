@@ -65,7 +65,7 @@
                         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>  -->
                     <div class="info" style="font-size:125%">
-                        <a href="" class="d-block">Raider</a>
+                        <a href="" class="d-block">SISTEMA DE VENTAS</a>
                     </div>
                 </div>
 
@@ -103,7 +103,63 @@
 
                             </ul>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-fw fa-tags"></i>
+                                <p>
+                                    Compras
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                              
+                                <li class="nav-item">
+                                    <a href="{{ route('Compras.registro') }}" class="nav-link">
+                                        <i class="fas fa-fw fa-pen"></i>
+                                        <p>Registro</p>
+                                    </a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a href="{{ route('Compras.list') }}" class="nav-link ">
+                                        <i class="fas fa-fw fa-clipboard-list"></i>
+                                        <p>Listado de Consumidores</p>
+                                    </a>
+                                </li>
+                                
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-fw fa-tags"></i>
+                                <p>
+                                    DETALLE DE FACTURA
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                              
+                                
+                               
+                                <li class="nav-item">
+                                    <a href="{{ route('facturas.list') }}" class="nav-link ">
+                                        <i class="fas fa-fw fa-clipboard-list"></i>
+                                        <p>Listado de Facturas</p>
+                                    </a>
+                                </li>
+                                
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('logout') }}" class="nav-link">
+                                <i class= "nav-icon fas fa-power-of"></i>
+                                <p>Salir</p>
+                                </a>
+                          </li>
                         
                 </nav>
                 <!-- /.sidebar-menu -->

@@ -52,6 +52,8 @@ class ProductosController extends Controller
       $pp->delete();
       return redirect()->route('productos.list');
     }
+
+   
     
 
     /**

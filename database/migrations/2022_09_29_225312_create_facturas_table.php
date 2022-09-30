@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('productos', function (Blueprint $table) {
+        Schema::create('facturas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre'); 
-            $table->double('precio');
-            $table->text('descripcion');
+            $table->integer('id_cliente');
+            $table->string('producto');
             $table->integer('cantidad');
+            $table->integer('precio');
+            $table->integer('total');
             $table->timestamps();
         });
     }
 
-    
     /**
      * Reverse the migrations.
      *
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('productos');
+        Schema::dropIfExists('facturas');
     }
 };
